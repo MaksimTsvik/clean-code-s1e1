@@ -15,8 +15,10 @@
   <section class="tasks">
     <div id="add-task">
       <label for="new-task">Add Item</label>
-      <input class="new-task" id="new-task" type="text">
-      <button>Add</button>
+      <div class="task-row-wrapper">
+        <input class="task new-task" id="new-task" type="text">
+        <button>Add</button>
+      </div>
     </div>
     <h3>Todo</h3>
     <ul id="incomplete-tasks">
@@ -44,7 +46,7 @@
       <li>
         <input type="checkbox" checked>
         <label class="task">See the Doctor</label>
-        <input type="text">
+        <input type="text" class="task">
         <button class="edit">Edit</button>
         <button class="delete">
           <img src="./remove.svg" alt="Delete from list">
