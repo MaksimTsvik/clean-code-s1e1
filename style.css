@@ -1,4 +1,4 @@
-/* Basic Style */
+/* Basic Styles */
 
 * {
   box-sizing: border-box;
@@ -8,43 +8,6 @@ body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
-}
-
-.eisenhower {
-  width: 500px;
-  margin: 0 auto;
-  display: block;
-  text-align: right;
-}
-
-.eisenhower-img {
-  width: 100%;
-}
-
-.more-inf {
-  font-family: fantasy, cursive;
-}
-
-@media (max-width:768px) {
-  .eisenhower { 
-      text-align: center;
-  }
-}
-
-.tasks {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
-}
-
-.task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1
-}
-
-.task-row-wrapper {
-    display: flex;
 }
 
 ul {
@@ -74,10 +37,63 @@ button:hover {
   color: #3a3a3a;
 }
 
-/* Heading */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-h3,
-label[for="new-task"] {
+li > * {
+  vertical-align: middle;
+}
+
+/* Header */
+
+.eisenhower {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+.eisenhower-img {
+  width: 100%;
+}
+
+.more-inf {
+  font-family: fantasy, cursive;
+}
+
+@media (max-width:768px) {
+  .eisenhower { 
+      text-align: center;
+  }
+}
+
+/* Main */
+
+.tasks {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1
+}
+
+.task-row-wrapper {
+    display: flex;
+}
+
+.todo__header,
+.add-label,
+.completed__header {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -120,19 +136,6 @@ p > button:hover {
 }
 
 /* Task list */
-
-li {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-li > * {
-  vertical-align: middle;
-}
 
 li > input[type="checkbox"] {
   margin: 0 10px;
