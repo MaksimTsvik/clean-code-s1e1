@@ -122,16 +122,16 @@ input[type="text"]:focus {
 
 /* New Task */
 
-label[for="new-task"] {
+.add-label {
   display: block;
   margin: 0 0 20px;
 }
 
-#new-task {
+.new-task {
   width: 318px;
 }
 
-p > button:hover {
+.add-task__button:hover {
   color: #0fc57c;
 }
 
@@ -148,11 +148,11 @@ li > label {
   width: 226px;
 }
 
-li >    input[type="text"] {
+.task-input {
   width: 226px
 }
 
-li > button.delete:hover {
+.delete:hover {
   color: #cf2323;
 }
 
